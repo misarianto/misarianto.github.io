@@ -1,400 +1,614 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mis Arianto — Software Engineer</title>
+  <link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/icons/favicon-192.png">
+  <link rel="apple-touch-icon" href="favicon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-
-    <link rel="stylesheet" type="text/css" href="style.css">
-
-    <title>My Portfolio | Mis Arianto</title>
-
-    <style type="text/css">
-      a{
-        text-decoration: none;
-      }
-    </style>
-  </head>
-  <body id="home">
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#">Mis Arianto</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#certificate">Certificate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
-        </div>
+  <!-- NAV -->
+  <nav>
+    <a class="nav-brand" href="#home">Mis<span>.</span>Arianto</a>
+    <div style="display:flex;align-items:center;gap:1.5rem;">
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#certificate">Certificate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle-wrap">
+        <span class="theme-icon">🌙</span>
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme"></button>
+        <span class="theme-icon">☀️</span>
       </div>
-    </nav>
-    <!-- end navbar -->
+    </div>
+  </nav>
 
-    <!-- jumbotron -->
-    <section class="jumbotron text-center">
-      <img src="img/rian.jpg" alt="Mis Arianto" style="width: 200px;height: 200px;" class="rounded-circle img-thumbnail">
-      <h1 class="display-4">Mis Arianto</h1>
-      <p class="lead">Software Engineer | Designer</p>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L60,149.3C120,171,240,213,360,202.7C480,192,600,128,720,117.3C840,107,960,149,1080,154.7C1200,160,1320,128,1380,112L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </section>
-    <!-- end jumbotron -->
+  <!-- HERO -->
+  <section id="home">
+    <div class="hero-glow hero-glow-1"></div>
+    <div class="hero-glow hero-glow-2"></div>
 
-    <!-- about -->
-    <section class="about" id="about">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>About Me</h2>
-          </div>
-        </div>
-        <h4 class="text-center text-muted">Stack</h4>
-        <div class="row fs-5 mt-5">
-          <div class="col-md">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">PHP ( Laravel, Lumen )</li>
-              <li class="list-group-item">Go-lang ( Fiber, Gin-Gonic, Gorilla-mux )</li>
-              <li class="list-group-item">Dart ( Flutter )</li>
-              <li class="list-group-item">Javascript ( React.js, Next.js, Vue.js, Nuxt.js, Express.js, Adonis.js )</li>
-              <li class="list-group-item">Python ( KivyMD, Machine Learning )</li>
-              <li class="list-group-item">Template Engine (Blade, Ejs, Pug)</li>
-              <li class="list-group-item">Versioning Control ( Github, Git CLI, Gitlab )</li>
-              <li class="list-group-item">CI/CD ( Jenskins )</li>
-              <li class="list-group-item">Container ( Docker, Docker Compose )</li>
-              <li class="list-group-item"></li>
-            </ul>
-          </div>  
-          <div class="col-md">
-            <ul class="list-group list-group-flush">
-              <li class="list-group-item">RDBMS ( MySQL, PostgreSQL, SQLite3 )</li>
-              <li class="list-group-item">NO SQL ( MongoDB )</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,96L60,90.7C120,85,240,75,360,112C480,149,600,235,720,224C840,213,960,107,1080,80C1200,53,1320,107,1380,133.3L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </section>
-    <!-- end about -->
+    <!-- floating code badges -->
+    <div class="code-badge code-badge-1">$ git push origin main</div>
+    <div class="code-badge code-badge-2">✓ build successful</div>
+    <div class="code-badge code-badge-3">⚡ docker compose up</div>
 
-    <!-- certificate -->
-    <section id="certificate">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>My Certificate</h2>
-          </div>
+    <div class="hero-inner">
+      <!-- LEFT -->
+      <div class="hero-left">
+        <div class="hero-avatar-wrap">
+          <img src="img/rian.jpg" alt="Mis Arianto" class="hero-avatar" onerror="this.style.display='none'">
+          <div class="hero-avatar-ring"></div>
         </div>
 
-        <h3 class="text-center mb-3 text-muted">TAHUN 2022</h3>
-        <div class="row mt-5">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/2022/1.png" class="card-img-top" alt="Code Politan x Alibaba Cloud">
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/2022/2.png" class="card-img-top" alt="Code Politan x Alibaba Cloud">
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/2022/3.png" class="card-img-top" alt="Code Politan x Alibaba Cloud">
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/2022/4.jpg" class="card-img-top" alt="Code Politan">
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/2022/5.png" class="card-img-top" alt="Code Politan x Alibaba Cloud">
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/2022/6.png" class="card-img-top" alt="Alibaba Cloud">
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/2022/7.jpg" class="card-img-top" alt="Hacktiv8">
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/2022/8.jpg" class="card-img-top" alt="Codepolitan">
-            </div>
-          </div>
+        <div class="hero-badge">Available for work</div>
+
+        <h1 class="hero-name">Mis Arianto</h1>
+
+        <div class="hero-role">
+          &gt; <span id="typewriter"></span><span class="cursor"></span>
         </div>
-        <h3 class="text-center mb-3 text-muted">TAHUN 2021</h3>
-        <div class="row mt-5">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/alibaba1.jpg" class="card-img-top" alt="Alibaba Certificate">
-            </div>
+
+        <p class="hero-sub">
+          Full-stack engineer crafting scalable web apps, APIs, and mobile solutions — from architecture to deployment.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#project" class="hero-cta">
+            View Projects
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#contact" class="hero-cta-ghost">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">14<span>+</span></div>
+            <div class="hero-stat-label">Projects</div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/webinar1.png" class="card-img-top" alt="Codepolitan Certificate">
-            </div>
+          <div>
+            <div class="hero-stat-num">5<span>+</span></div>
+            <div class="hero-stat-label">Years Exp</div>
           </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/certificate/webinar2.png" class="card-img-top" alt="Re-cloud Certificate">
-            </div>
-          </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/certificate/webinar3.jpg" class="card-img-top" alt="Alibaba Certificate">
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/certificate/webinar4.png" class="card-img-top" alt="Alibaba Academy Certificate">
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/certificate/webinar5.png" class="card-img-top" alt="Dicoding Certificate">
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/certificate/webinar6.png" class="card-img-top" alt="Dicoding Certificate">
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/certificate/webinar7.png" class="card-img-top" alt="Dicoding Certificate">
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/certificate/webinar8.png" class="card-img-top" alt="Dicoding Certificate">
-              </div>
-            </div>
+          <div>
+            <div class="hero-stat-num">8<span>+</span></div>
+            <div class="hero-stat-label">Tech Stacks</div>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,288L60,288C120,288,240,288,360,250.7C480,213,600,139,720,122.7C840,107,960,149,1080,149.3C1200,149,1320,107,1380,85.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </section>
-    <!-- end certificate -->
 
-    <!-- projects -->
-    <section id="project">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>My Project</h2>
+      <!-- RIGHT: Terminal -->
+      <div class="hero-right">
+        <div class="hero-terminal">
+          <div class="terminal-bar">
+            <div class="terminal-dot dot-red"></div>
+            <div class="terminal-dot dot-yellow"></div>
+            <div class="terminal-dot dot-green"></div>
+            <div class="terminal-title">developer.go — mis_arianto</div>
           </div>
-        </div>
-        <div class="row mt-5">
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/e-planning.png" class="card-img-top" alt="Alibaba Certificate">
-              <div class="card-body">
-                <h5 class="card-title"><a href="http://sipd.merantikab.go.id/e-planning">E-Planning</a></h5>
-                <p class="card-text">aplikasi yang menginovasi proses musrenbang kelurahan, musrenbang kecamatan, forum Organisasi Perangkat Daerah (OPD), pokok-pokok pikiran dewan, musrenbang Kabupaten/Kota, hingga terbentuk rancangan RKPD yang lebih transparan, cepat, terintegrasi, konsisten dan sesuai dengan aturan yang berlaku.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/dikemas.png" class="card-img-top" alt="Alibaba Certificate">
-              <div class="card-body">
-                <h5 class="card-title"><a href="http://dikemas.merantikab.go.id/e-planning">DIKEMAS</a></h5>
-                <p class="card-text">Survei Kepuasan Masyarakat (SKM) adalah kegiatan pengukuran secara komprehensif tingkat kepuasan masyarakat terhadap kualitas layanan yang diberikan oleh penyelenggara pelayanan publik.
-
-                Indeks Kepuasan Masyarakat (IKM) adalah hasil pengukuran dari kegiatan Survei Kepuasan Masyarakat berupa angka.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/dashboard.png" class="card-img-top" alt="Alibaba Certificate">
-              <div class="card-body">
-                <h5 class="card-title"><a href="#">GIS</a></h5>
-                <p class="card-text">GIS (Geographic Information System) atau sistem informasi geografis adalah alat berbasis komputer untuk memetakan dan menganalisis hal-hal yang ada dan peristiwa-peristiwa yang terjadi di bumi. Teknologi GIS mengintegrasikan database umum dengan operasi seperti kueri dan analisis statistik dengan visualisasi unik. GIS juga dapat menampilkan aspek geografis serta manfaat analisis yang ditawarkan oleh peta.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/es-krim.png" class="card-img-top" alt="Alibaba Certificate">
-              <div class="card-body">
-                <h5 class="card-title"><a href="http://es-krim.merantikab.go.id/">ES-KRIM</a></h5>
-                <p class="card-text">Elektronik Sistem Klinik Riset dan Inovasi Meranti</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/perpustakaan.png" class="card-img-top" alt="Alibaba Certificate">
-              <div class="card-body">
-                <h5 class="card-title"><a href="http://sainsautoma.com/perpustakaan">E-PUSTAKA</a></h5>
-                <p class="card-text">Apliksi Perpustakaan berbasis online</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/rumahinovasi.png" class="card-img-top" alt="Alibaba Certificate">
-              <div class="card-body">
-                <h5 class="card-title"><a href="http://rumahinovasi.merantikab.go.id/">RUMAH INOVASI</a></h5>
-                <p class="card-text">Aplikasi Inovasi</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/sitaman.png" class="card-img-top" alt="Alibaba Certificate">
-              <div class="card-body">
-                <h5 class="card-title"><a href="http://sitaman.merantikab.go.id/">SITAMAN</a></h5>
-                <p class="card-text">Sistem Informasi Taging dan Mandatori</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/yayasanpermata.png" class="card-img-top" alt="Alibaba Certificate">
-              <div class="card-body">
-                <h5 class="card-title"><a href="https://yayasanpermata.com/">YAYASAN PERMATA</a></h5>
-                <p class="card-text">Portal Yayasan, Sekolah, PPDB, SPP, Absensi, dan Penggajian</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/e-sakip.png" class="card-img-top" alt="Alibaba Certificate">
-              <div class="card-body">
-                <h5 class="card-title"><a href="http://e-sakip.merantikab.go.id">E-Sakip</a></h5>
-                <p class="card-text">Sistem Akuntabilitas Kinerja Instansi Permerintah Daerah</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/shipchandler.png" class="card-img-top" alt="i-shipchandler">
-              <div class="card-body">
-                <h5 class="card-title"><a href="http://i-shipchandler.riauforecasting.com/">I-Shipchandler</a></h5>
-                <p class="card-text">Market Place yang menjual kebutuhan pokok dan perlengkapan selama melaut</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card">
-              <img src="img/apps/bappeda.png" class="card-img-top" alt="Website Bappeda">
-              <div class="card-body">
-                <h5 class="card-title"><a href="http://bappeda.merantikab.go.id/">Bappeda Meranti</a></h5>
-                <p class="card-text">Website Bappeda Kabupaten Kepulauan Meranti</p>
-              </div>
-            </div>
-          </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/apps/marishop.png" class="card-img-top" alt="Marishop">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="https://marishop.store">Mari Shop</a></h5>
-                  <p class="card-text">Toko Online Mari Shooping</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/apps/haqqagroup.png" class="card-img-top" alt="hcode">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="http://haqqagroup.com/">Hcode</a></h5>
-                  <p class="card-text">Tempat Belajar seputar dunia pemogramman</p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-4 mb-3">
-              <div class="card">
-                <img src="img/apps/klinikdesa.png" class="card-img-top" alt="Klinik Desa">
-                <div class="card-body">
-                  <h5 class="card-title"><a href="http://klinikdesa.merantikab.go.id">Klinik Desa</a></h5>
-                  <p class="card-text">Sistem Penyelarasan Kebijakan Pembangunan Daerah dan Desa serta Percepatan Pengembangan Ekonomi Kerakyatan ( Bum Desa, UKM, UMKM ) dan Ekonomi Kreatif</p>
-                </div>
-              </div>
-            </div>
-            
+          <div class="terminal-body" id="terminalBody">
+            <span class="t-line t-comment">// mis_arianto/profile.go</span>
+            <span class="t-line">&nbsp;</span>
+            <span class="t-line"><span class="t-keyword">package</span> <span class="t-val">main</span></span>
+            <span class="t-line">&nbsp;</span>
+            <span class="t-line"><span class="t-keyword">type</span> <span class="t-func">Developer</span> <span class="t-bracket">struct {</span></span>
+            <span class="t-indent"><span class="t-prop">Name</span>     <span class="t-string">"Mis Arianto"</span></span>
+            <span class="t-indent"><span class="t-prop">Role</span>     <span class="t-string">"Software Engineer"</span></span>
+            <span class="t-indent"><span class="t-prop">Location</span> <span class="t-string">"Selatpanjang, Riau 🇮🇩"</span></span>
+            <span class="t-indent"><span class="t-prop">Company</span>  <span class="t-string">"Haqqa Group"</span></span>
+            <span class="t-line"><span class="t-bracket">}</span></span>
+            <span class="t-line">&nbsp;</span>
+            <span class="t-line"><span class="t-keyword">func</span> <span class="t-func">Skills</span><span class="t-bracket">() []</span><span class="t-keyword">string</span> <span class="t-bracket">{</span></span>
+            <span class="t-indent"><span class="t-keyword">return</span> <span class="t-bracket">[]</span><span class="t-keyword">string</span><span class="t-bracket">{</span></span>
+            <span class="t-indent2"><span class="t-string">"Go"</span><span class="t-bracket">,</span> <span class="t-string">"PHP/Laravel"</span><span class="t-bracket">,</span></span>
+            <span class="t-indent2"><span class="t-string">"React"</span><span class="t-bracket">,</span> <span class="t-string">"Flutter"</span><span class="t-bracket">,</span></span>
+            <span class="t-indent2"><span class="t-string">"Docker"</span><span class="t-bracket">,</span> <span class="t-string">"PostgreSQL"</span><span class="t-bracket">,</span></span>
+            <span class="t-indent"><span class="t-bracket">}</span></span>
+            <span class="t-line"><span class="t-bracket">}</span></span>
+            <span class="t-line">&nbsp;</span>
+            <span class="t-line"><span class="t-keyword">func</span> <span class="t-func">main</span><span class="t-bracket">() {</span></span>
+            <span class="t-indent"><span class="t-func">fmt</span><span class="t-bracket">.</span><span class="t-func">Println</span><span class="t-bracket">(</span><span class="t-string">"Ready to build! 🚀"</span><span class="t-bracket">)</span></span>
+            <span class="t-line"><span class="t-bracket">}</span></span>
+            <span class="t-line">&nbsp;</span>
+            <span class="t-line t-comment" id="terminalStatus">// &gt; Running... <span style="color:#6ee7b7" id="termDots"></span></span>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,64L60,80C120,96,240,128,360,133.3C480,139,600,117,720,112C840,107,960,117,1080,138.7C1200,160,1320,192,1380,208L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </section>
-    <!-- end projects -->
+    </div>
+  </section>
 
-    <!-- contact me -->
-    <section id="contact">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col">
-            <h2>Contact Me</h2>
+  <!-- ABOUT -->
+  <section id="about" class="section-dotgrid">
+    <div class="container">
+      <p class="section-label reveal">Tech Stack</p>
+      <h2 class="section-title reveal">What I Work With</h2>
+      <div class="section-divider reveal"></div>
+
+      <!-- Scrolling tech marquee -->
+      <div class="tech-marquee-wrap reveal">
+        <div class="tech-marquee">
+          <span class="tech-marquee-item">Go / Fiber</span>
+          <span class="tech-marquee-item">PHP / Laravel</span>
+          <span class="tech-marquee-item">React.js</span>
+          <span class="tech-marquee-item">Vue.js</span>
+          <span class="tech-marquee-item">Flutter</span>
+          <span class="tech-marquee-item">Docker</span>
+          <span class="tech-marquee-item">PostgreSQL</span>
+          <span class="tech-marquee-item">MongoDB</span>
+          <span class="tech-marquee-item">Jenkins CI/CD</span>
+          <span class="tech-marquee-item">Next.js</span>
+          <span class="tech-marquee-item">Machine Learning</span>
+          <span class="tech-marquee-item">Git / GitLab</span>
+          <!-- duplicate for seamless loop -->
+          <span class="tech-marquee-item">Go / Fiber</span>
+          <span class="tech-marquee-item">PHP / Laravel</span>
+          <span class="tech-marquee-item">React.js</span>
+          <span class="tech-marquee-item">Vue.js</span>
+          <span class="tech-marquee-item">Flutter</span>
+          <span class="tech-marquee-item">Docker</span>
+          <span class="tech-marquee-item">PostgreSQL</span>
+          <span class="tech-marquee-item">MongoDB</span>
+          <span class="tech-marquee-item">Jenkins CI/CD</span>
+          <span class="tech-marquee-item">Next.js</span>
+          <span class="tech-marquee-item">Machine Learning</span>
+          <span class="tech-marquee-item">Git / GitLab</span>
+        </div>
+      </div>
+
+      <div class="skills-grid reveal">
+        <div class="skill-card">
+          <div class="skill-icon">⚡</div>
+          <div class="skill-name">Backend</div>
+          <div class="skill-items">
+            <span class="skill-tag">PHP</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">Lumen</span>
           </div>
         </div>
-        <div class="row mt-5">
-          <div class="col-md-6 mb-3">
-            <h3>Alamat</h3>
-            <p>Jalan Perumbi Gg. Antara RT 002 RW 002 Kota Selatpanjang, Kab.Kep. Meranti, Riau, Indonesia</p>
-            <h3>Sosial Media</h3>
-            <p>Fb: Mis Arianto</p>
-            <p>IG: @rian_haqqa</p>
-            <p>Telegram:@MisArianto</p>
-
-            <h3>Perusahaan</h3>
-            <p>Haqqa Group</p>
+        <div class="skill-card">
+          <div class="skill-icon">🦫</div>
+          <div class="skill-name">Go-lang</div>
+          <div class="skill-items">
+            <span class="skill-tag">Fiber</span>
+            <span class="skill-tag">Gin-Gonic</span>
+            <span class="skill-tag">Gorilla-mux</span>
           </div>
-          <div class="col-md-6">
-            <form>
-              <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-              </div>
-              <div class="mb-3">
-                <label for="exampleInputPassword1" class="form-label">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
-              </div>
-              <div class="mb-3">
-                <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🌐</div>
+          <div class="skill-name">Frontend</div>
+          <div class="skill-items">
+            <span class="skill-tag">React.js</span>
+            <span class="skill-tag">Next.js</span>
+            <span class="skill-tag">Vue.js</span>
+            <span class="skill-tag">Nuxt.js</span>
           </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">📱</div>
+          <div class="skill-name">Mobile</div>
+          <div class="skill-items">
+            <span class="skill-tag">Flutter</span>
+            <span class="skill-tag">Dart</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🗄️</div>
+          <div class="skill-name">Database</div>
+          <div class="skill-items">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">SQLite3</span>
+            <span class="skill-tag">MongoDB</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <div class="skill-name">Python</div>
+          <div class="skill-items">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">KivyMD</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐳</div>
+          <div class="skill-name">DevOps</div>
+          <div class="skill-items">
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">Jenkins</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">GitLab</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🧩</div>
+          <div class="skill-name">Templating & Runtime</div>
+          <div class="skill-items">
+            <span class="skill-tag">Blade</span>
+            <span class="skill-tag">EJS</span>
+            <span class="skill-tag">Express.js</span>
+            <span class="skill-tag">Adonis.js</span>
           </div>
         </div>
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,224L60,224C120,224,240,224,360,202.7C480,181,600,139,720,149.3C840,160,960,224,1080,240C1200,256,1320,224,1380,208L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-    </section>
-    <!-- end contact me -->
+    </div>
+  </section>
 
-    <!-- footer -->
-    <footer class="bg-primary text-white text-center pb-5">
-      <p>Created with <i class="bi bi-heart-fill text-danger"></i> <a href="https://www.instagram.com/rian_haqqa" class="text-white fw-bold">Mis Arianto</a></p>
-    </footer>
-    <!-- end footer -->
+  <!-- PROJECTS -->
+  <section id="project">
+    <div class="container">
+      <p class="section-label reveal">Portfolio</p>
+      <h2 class="section-title reveal">Selected Projects</h2>
+      <div class="section-divider reveal"></div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-  </body>
+      <!-- Mini terminal bar above grid -->
+      <div class="projects-terminal-bar reveal">
+        <div class="td td-r"></div>
+        <div class="td td-y"></div>
+        <div class="td td-g"></div>
+        <span>~/projects — 12 repositories</span>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">📋</div>
+          <div class="project-code-line"><span class="pclc">$</span> open e-planning.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="http://sipd.merantikab.go.id/e-planning">E-Planning</a></div>
+            <p class="project-desc">Aplikasi inovasi proses musrenbang kelurahan hingga rancangan RKPD yang transparan, cepat, dan terintegrasi sesuai aturan yang berlaku.</p>
+            <div class="project-footer">
+              <a href="http://sipd.merantikab.go.id/e-planning" class="project-link">→ visit_project()</a>
+              <span class="project-num">#01</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">📊</div>
+          <div class="project-code-line"><span class="pclc">$</span> open dikemas.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="http://dikemas.merantikab.go.id/">DIKEMAS</a></div>
+            <p class="project-desc">Survei Kepuasan Masyarakat (SKM) — pengukuran komprehensif tingkat kepuasan masyarakat terhadap kualitas layanan publik.</p>
+            <div class="project-footer">
+              <a href="http://dikemas.merantikab.go.id/" class="project-link">→ visit_project()</a>
+              <span class="project-num">#02</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">🗺️</div>
+          <div class="project-code-line"><span class="pclc">$</span> open gis-dashboard.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="#">GIS Dashboard</a></div>
+            <p class="project-desc">Sistem Informasi Geografis berbasis web — memetakan dan menganalisis data geospasial dengan visualisasi interaktif.</p>
+            <div class="project-footer">
+              <a href="#" class="project-link">→ visit_project()</a>
+              <span class="project-num">#03</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">🔬</div>
+          <div class="project-code-line"><span class="pclc">$</span> open es-krim.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="http://es-krim.merantikab.go.id/">ES-KRIM</a></div>
+            <p class="project-desc">Elektronik Sistem Klinik Riset dan Inovasi Meranti — platform inovasi dan riset digital berbasis cloud.</p>
+            <div class="project-footer">
+              <a href="http://es-krim.merantikab.go.id/" class="project-link">→ visit_project()</a>
+              <span class="project-num">#04</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">📚</div>
+          <div class="project-code-line"><span class="pclc">$</span> open e-pustaka.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="http://sainsautoma.com/perpustakaan">E-PUSTAKA</a></div>
+            <p class="project-desc">Aplikasi perpustakaan berbasis online — manajemen koleksi buku, anggota, dan peminjaman secara digital.</p>
+            <div class="project-footer">
+              <a href="http://sainsautoma.com/perpustakaan" class="project-link">→ visit_project()</a>
+              <span class="project-num">#05</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">💡</div>
+          <div class="project-code-line"><span class="pclc">$</span> open rumah-inovasi.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="http://rumahinovasi.merantikab.go.id/">Rumah Inovasi</a></div>
+            <p class="project-desc">Platform pengelolaan dan monitoring inovasi daerah secara terpusat dan terstruktur.</p>
+            <div class="project-footer">
+              <a href="http://rumahinovasi.merantikab.go.id/" class="project-link">→ visit_project()</a>
+              <span class="project-num">#06</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">🏫</div>
+          <div class="project-code-line"><span class="pclc">$</span> open yayasan-permata.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="https://yayasanpermata.com/">Yayasan Permata</a></div>
+            <p class="project-desc">Portal Yayasan lengkap dengan modul Sekolah, PPDB, SPP, Absensi, dan Penggajian terintegrasi.</p>
+            <div class="project-footer">
+              <a href="https://yayasanpermata.com/" class="project-link">→ visit_project()</a>
+              <span class="project-num">#07</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">🚢</div>
+          <div class="project-code-line"><span class="pclc">$</span> open i-shipchandler.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="http://i-shipchandler.riauforecasting.com/">I-Shipchandler</a></div>
+            <p class="project-desc">Market Place kebutuhan pokok dan perlengkapan nelayan — solusi digital untuk komunitas maritim Riau.</p>
+            <div class="project-footer">
+              <a href="http://i-shipchandler.riauforecasting.com/" class="project-link">→ visit_project()</a>
+              <span class="project-num">#08</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">🛍️</div>
+          <div class="project-code-line"><span class="pclc">$</span> open marishop.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="https://marishop.store">Mari Shop</a></div>
+            <p class="project-desc">Platform e-commerce — toko online modern dengan pengalaman belanja yang mudah dan menyenangkan.</p>
+            <div class="project-footer">
+              <a href="https://marishop.store" class="project-link">→ visit_project()</a>
+              <span class="project-num">#09</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">💻</div>
+          <div class="project-code-line"><span class="pclc">$</span> open hcode.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="http://haqqagroup.com/">Hcode</a></div>
+            <p class="project-desc">Platform pembelajaran pemrograman — komunitas belajar coding berkualitas untuk developer Indonesia.</p>
+            <div class="project-footer">
+              <a href="http://haqqagroup.com/" class="project-link">→ visit_project()</a>
+              <span class="project-num">#10</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">🏘️</div>
+          <div class="project-code-line"><span class="pclc">$</span> open klinik-desa.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="http://klinikdesa.merantikab.go.id">Klinik Desa</a></div>
+            <p class="project-desc">Sistem penyelarasan kebijakan pembangunan daerah dan desa, serta percepatan pengembangan Bum Desa, UKM, UMKM, dan ekonomi kreatif.</p>
+            <div class="project-footer">
+              <a href="http://klinikdesa.merantikab.go.id" class="project-link">→ visit_project()</a>
+              <span class="project-num">#11</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-img-placeholder">📈</div>
+          <div class="project-code-line"><span class="pclc">$</span> open e-sakip.go</div>
+          <div class="project-body">
+            <div class="project-title"><a href="http://e-sakip.merantikab.go.id">E-Sakip</a></div>
+            <p class="project-desc">Sistem Akuntabilitas Kinerja Instansi Pemerintah Daerah — monitoring dan evaluasi kinerja berbasis data.</p>
+            <div class="project-footer">
+              <a href="http://e-sakip.merantikab.go.id" class="project-link">→ visit_project()</a>
+              <span class="project-num">#12</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificate" class="section-dotgrid">
+    <div class="container">
+      <p class="section-label reveal">Achievements</p>
+      <h2 class="section-title reveal">My Certificates</h2>
+      <div class="section-divider reveal"></div>
+
+      <div class="reveal">
+        <div class="year-label">2022</div>
+        <div class="cert-grid">
+          <div class="cert-card" data-src="img/certificate/2022/1.png" data-group="all"><img src="img/certificate/2022/1.png" alt="Certificate 2022-1" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/2022/2.png" data-group="all"><img src="img/certificate/2022/2.png" alt="Certificate 2022-2" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/2022/3.png" data-group="all"><img src="img/certificate/2022/3.png" alt="Certificate 2022-3" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/2022/4.jpg" data-group="all"><img src="img/certificate/2022/4.jpg" alt="Certificate 2022-4" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/2022/5.png" data-group="all"><img src="img/certificate/2022/5.png" alt="Certificate 2022-5" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/2022/6.png" data-group="all"><img src="img/certificate/2022/6.png" alt="Certificate 2022-6" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/2022/7.jpg" data-group="all"><img src="img/certificate/2022/7.jpg" alt="Certificate 2022-7" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/2022/8.jpg" data-group="all"><img src="img/certificate/2022/8.jpg" alt="Certificate 2022-8" loading="lazy"></div>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="year-label">2021</div>
+        <div class="cert-grid">
+          <div class="cert-card" data-src="img/certificate/alibaba1.jpg" data-group="all"><img src="img/certificate/alibaba1.jpg" alt="Alibaba" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/webinar1.png" data-group="all"><img src="img/certificate/webinar1.png" alt="Webinar 1" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/webinar2.png" data-group="all"><img src="img/certificate/webinar2.png" alt="Webinar 2" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/webinar3.jpg" data-group="all"><img src="img/certificate/webinar3.jpg" alt="Webinar 3" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/webinar4.png" data-group="all"><img src="img/certificate/webinar4.png" alt="Webinar 4" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/webinar5.png" data-group="all"><img src="img/certificate/webinar5.png" alt="Webinar 5" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/webinar6.png" data-group="all"><img src="img/certificate/webinar6.png" alt="Webinar 6" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/webinar7.png" data-group="all"><img src="img/certificate/webinar7.png" alt="Webinar 7" loading="lazy"></div>
+          <div class="cert-card" data-src="img/certificate/webinar8.png" data-group="all"><img src="img/certificate/webinar8.png" alt="Webinar 8" loading="lazy"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <p class="section-label reveal">Get In Touch</p>
+      <h2 class="section-title reveal">Contact Me</h2>
+      <div class="section-divider reveal"></div>
+      <div class="contact-grid reveal">
+
+        <!-- Left: JSON-style config card -->
+        <div class="contact-config">
+          <div class="contact-config-bar">
+            <div class="terminal-dot dot-red"></div>
+            <div class="terminal-dot dot-yellow"></div>
+            <div class="terminal-dot dot-green"></div>
+            <div class="contact-config-title">contact.json</div>
+          </div>
+          <div class="contact-config-body">
+            <span style="display:block"><span class="cc-brace">{</span></span>
+            <span style="display:block;padding-left:1.5rem"><span class="cc-key">"name"</span>: <span class="cc-str">"Mis Arianto"</span>,</span>
+            <span style="display:block;padding-left:1.5rem"><span class="cc-key">"role"</span>: <span class="cc-str">"Software Engineer"</span>,</span>
+            <span style="display:block;padding-left:1.5rem"><span class="cc-key">"company"</span>: <span class="cc-str">"Haqqa Group"</span>,</span>
+            <span style="display:block;padding-left:1.5rem"><span class="cc-key">"location"</span>: <span class="cc-str">"Selatpanjang, Riau 🇮🇩"</span>,</span>
+            <span style="display:block;padding-left:1.5rem">&nbsp;</span>
+            <span style="display:block;padding-left:1.5rem"><span class="cc-key">"social"</span>: <span class="cc-brace">{</span></span>
+            <span style="display:block;padding-left:3rem"><span class="cc-key">"facebook"</span>: <a href="#" class="cc-link">"Mis Arianto"</a>,</span>
+            <span style="display:block;padding-left:3rem"><span class="cc-key">"instagram"</span>: <a href="https://instagram.com/rian_haqqa" class="cc-link">"@rian_haqqa"</a>,</span>
+            <span style="display:block;padding-left:3rem"><span class="cc-key">"telegram"</span>: <a href="#" class="cc-link">"@MisArianto"</a></span>
+            <span style="display:block;padding-left:1.5rem"><span class="cc-brace">},</span></span>
+            <span style="display:block;padding-left:1.5rem">&nbsp;</span>
+            <span style="display:block;padding-left:1.5rem"><span class="cc-cmt">// open to collaboration</span></span>
+            <span style="display:block;padding-left:1.5rem"><span class="cc-key">"available"</span>: <span class="cc-val">true</span>,</span>
+            <span style="display:block;padding-left:1.5rem"><span class="cc-key">"respond_time"</span>: <span class="cc-str">"&lt; 24 hours"</span></span>
+            <span style="display:block"><span class="cc-brace">}</span></span>
+          </div>
+        </div>
+
+        <!-- Right: form -->
+        <div class="contact-form">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+          <div class="form-group">
+            <label>Subject</label>
+            <input type="text" placeholder="Project Inquiry">
+          </div>
+          <div class="form-group">
+            <label>Message</label>
+            <textarea placeholder="Tell me about your project..."></textarea>
+          </div>
+          <button class="btn-submit">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M2 8l12 0M8 2l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Send Message
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-brand">Mis<span>.</span>Arianto</div>
+      <div class="footer-copy">
+        crafted with ♥ by <a href="https://www.instagram.com/rian_haqqa">@rian_haqqa</a> — Selatpanjang, Riau
+      </div>
+      <div class="footer-code"><span>exit</span>(0); // all systems go 🚀</div>
+    </div>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" id="lbClose">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lbPrev">‹</button>
+    <img class="lightbox-img" id="lbImg" src="" alt="Certificate Preview">
+    <button class="lightbox-nav lightbox-next" id="lbNext">›</button>
+    <div class="lightbox-counter" id="lbCounter"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <!-- TRAKTEER BUTTON -->
+  <script type='text/javascript'>
+    function loadTrakteer() {
+      var s = document.createElement('script');
+      s.src = 'https://edge-cdn.trakteer.id/js/trbtn-overlay.min.js?v=14-05-2025';
+      s.onload = function() {
+        try {
+          var trbtnId = trbtnOverlay.init(
+            'Dukung Saya di Trakteer',
+            '#03A9F4',
+            'https://trakteer.id/mis_arianto/tip/embed/modal',
+            'https://trakteer.id/images/mix/coffee.png',
+            '40',
+            'floating-left'
+          );
+          trbtnOverlay.draw(trbtnId);
+          // hide fallback if trakteer loaded
+          var fb = document.getElementById('trakteer-fallback');
+          if (fb) fb.style.display = 'none';
+        } catch(e) {
+          console.warn('Trakteer failed:', e);
+        }
+      };
+      s.onerror = function() {
+        console.warn('Trakteer CDN could not be reached.');
+      };
+      document.body.appendChild(s);
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', loadTrakteer);
+    } else {
+      loadTrakteer();
+    }
+  </script>
+
+  <!-- Fallback manual button jika CDN Trakteer tidak bisa diakses -->
+  <a id="trakteer-fallback"
+     href="https://trakteer.id/mis_arianto/tip"
+     target="_blank"
+     rel="noopener"
+     style="
+       position: fixed;
+       left: 20px;
+       bottom: 20px;
+       z-index: 9999;
+       display: flex;
+       align-items: center;
+       gap: 8px;
+       background: #03A9F4;
+       color: #fff;
+       font-family: 'Poppins', sans-serif;
+       font-size: 13px;
+       font-weight: 600;
+       padding: 10px 16px;
+       border-radius: 100px;
+       text-decoration: none;
+       box-shadow: 0 4px 20px rgba(3,169,244,0.4);
+       transition: transform 0.2s, box-shadow 0.2s;
+     "
+     onmouseover="this.style.transform='translateY(-2px)';this.style.boxShadow='0 8px 28px rgba(3,169,244,0.5)'"
+     onmouseout="this.style.transform='';this.style.boxShadow='0 4px 20px rgba(3,169,244,0.4)'"
+  >
+    Dukung Saya di Trakteer
+  </a>
+
+</body>
 </html>
